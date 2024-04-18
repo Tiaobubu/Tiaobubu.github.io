@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2024/04/15 sunny， cloudy，air-pollluted | Tiaobubu&#39;s daily life</title>
+<link rel="shortcut icon" href="https://Tiaobubu.github.io//favicon.ico?v=1713404322856">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Tiaobubu.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="2024/04/15 sunny， cloudy，air-pollluted | Tiaobubu&#39;s daily life - Atom Feed" href="https://Tiaobubu.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="我与我周旋久，宁做我。
+今日份疑问🤕
+
+为什么最近加我微信的都是小学弟们！
+虽然他们笑眼盈盈的样子真的很有感染力！
+随机嘤嘤嘤一波～～～～
+
+干活
+
+解决可乘耦合跳测度总质量的控制函数。
+对于可乘耦合部分的积分well-defined利用..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://Tiaobubu.github.io/">
+  <img class="avatar" src="https://Tiaobubu.github.io//images/avatar.png?v=1713404322856" alt="">
+  </a>
+  <h1 class="site-title">
+    Tiaobubu&#39;s daily life
+  </h1>
+  <p class="site-description">
+    这里是跳跳的生活。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              2024/04/15 sunny， cloudy，air-pollluted
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-04-15
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p><strong><em>我与我周旋久</em>，宁做我。</strong></p>
+<p>今日份疑问🤕</p>
+<!-- more -->
+<p>为什么最近加我微信的都是小学弟们！<br>
+虽然他们笑眼盈盈的样子真的很有感染力！<br>
+随机嘤嘤嘤一波～～～～</p>
+<!-- more -->
+<p><strong>干活</strong></p>
+<ol>
+<li>解决可乘耦合跳测度总质量的控制函数。</li>
+<li>对于可乘耦合部分的积分well-defined利用基本不等式先放缩，估计两个平方项的积分，从而平方可积性得到验证。</li>
+<li>积分区域写上下限或者集合要统一。</li>
+</ol>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://Tiaobubu.github.io/post/20240413/">
+              <h3 class="post-title">
+                202404/13 晴朗 开心
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://Tiaobubu.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
